@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <h2>Veyora</h2>
+            <ul>
+                <li><a href="home.html" style="text-decoration: none;">Home |</a></li>
+                <li><a href="about.html" style="text-decoration: none;">About Us |</a></li>
+                <li>Packages |</li>                
+                <li><a href="signin.html" style="text-decoration: none;">Sign In</a></li>
+            </ul>
+        </nav>
+    </div>
+    <form class="book">
+        <h1>Booking Details</h1>
+        <div class="form-grid">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <div><input id="name" type="text" name="name" placeholder="Enter Name" required></div>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <div><input id="email" type="email" name="email" placeholder="@gmail.com" required></div>
+            </div>
+            <div class="form-row">
+                <label for="phone">Phone Number:</label>
+                <div><input id="phone" type="tel" name="phone" placeholder="Enter Phone Number" required></div>
+            </div>
+            <div class="form-row">
+                <label for="date">Date of Birth: </label>
+                <div>
+                    <input type="date" id="date" required style="cursor: pointer;">
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="package">Package Type: </label>
+                <div>
+                    <select id="package" required style="cursor: pointer;">
+                        <option value="">Select the Package type</option>
+                        <option>Fixed package</option>
+                        <option>Customized package</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <label>Package:</label>
+                <div>
+                    <input id="basic" type="radio" name="Package" required>
+                    <label for="basic">Basic</label>
+                    <input id="premium" type="radio" name="Package">
+                    <label for="premium">Premium</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="country">Country:</label>
+                <div>
+                    <select id="country" required style="cursor: pointer;">
+                        <option value="">Select a Country</option>
+                        <optgroup label="Country">
+                            <option>USA</option>
+                            <option>China</option>
+                            <option>Canada</option>
+                            <option>Russia</option>
+                        </optgroup>
+                        <optgroup label="Continent">
+                            <option>Asia</option>
+                            <option>Europe</option>                        </optgroup>
+                            <option>North America</option>
+                            <option>South America</option>
+                            <option>India</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="Number">No.of Adults: </label>
+                <div>
+                    <input type="number" id="Number" min="1" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="number">No.of Children: </label>
+                <div>
+                    <input type="number" id="number" min="0" required>
+                </div>
+                <label>(Under 13 years)</label>
+            </div>
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="footer-brand">
+            <h2>VEYORA</h2>
+            <p>
+                Travel comfortably. Explore more.
+            </p>
+            <p>
+                Create moments worth remembering.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#packages">Packages</a>
+            <p>Contact Us</p>
+            <p>+91-9587426588</p>
+            <p>+91-9872566820</p>
+            <p>veyora@gmail.com</p>
+        </div>
+
+        <div class="social-media">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+            <a href="#">X</a>
+            <a href="#">LinkedIn</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Veyora. All rights reserved.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

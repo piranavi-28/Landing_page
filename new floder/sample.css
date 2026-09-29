@@ -1,0 +1,24 @@
+h1{
+    white-space: nowrap;
+}
+h2{
+    vertical-align: bottom;
+} 
+h3{
+    vertical-align:middle;
+}
+h4{
+    vertical-align:sub;
+}
+h5{
+    vertical-align:super;
+}
+h6{
+    vertical-align:text-bottom;
+}
+p{
+    vertical-align:text-top;
+}    
+div{
+    vertical-align:top;
+}
