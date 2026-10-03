@@ -22,7 +22,8 @@
     }
 
     ul {
-        margin-left: 70%;
+        margin-left: 75%;
+        font-size: large;
     }
 
     a {
@@ -36,25 +37,34 @@
     }
 
     .dropdown {
-        display: inline-block;
-
+        position: relative;
     }
 
     .dropdown-list {
         display: none;
         position: absolute;
+        top: 100%;
+        left: 0;
         background-color: white;
-        padding: 10px;
+        min-width: 170px;
+        transform: translateX(-50px);
+    }
 
-        a {
-            text-decoration: none;
-            color: #16002B;
-        }
+    .dropdown-list a {
+        color: #D8C4F8;
+        padding: 10px 10px;
+        display: block;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .dropdown-list a:hover {
+        background-color: #9e80be;
     }
 
     .dropdown:hover .dropdown-list {
         display: block;
-        color: #C4B5FD;
+        transition: 1s;
     }
 }
 
@@ -65,7 +75,7 @@ body{
 .about{
         text-align: center;
         background-color: #F8F5FF;
-        padding: 80px 20px;
+        padding: 40px 20px;
 
     h1{
         color: #3D1766;
@@ -78,6 +88,7 @@ body{
         margin: auto;
         line-height: 1.6;
         max-width: 700px;
+        font-size: larger;
     }
 }
 .purpose{
@@ -104,41 +115,43 @@ body{
     .mission h2, .vision h2{
         color: #3D1766;
         margin-bottom: 20px;
+        font-size: xx-large;
     }
     .mission p,
     .vision p{
         color: #64748B;
         line-height: 1.7;
+        font-size: large;
     }
 }
 .beliefs{
     background-color: #16002B;
-    padding: 70px 8%;
+    padding: 20px 8%;
     text-align: center;
 
     h2{
         color: #F5B942;
-        margin-bottom: 40px;
+        margin-top: 10px;
     }
 
     .belief-container{
         display: flex;
-        gap: 25px;
+        gap: 10px;
     }
 
     div{
         flex: 1;
-        padding: 25px;
+        padding: 20px;
     }
 
     h3{
         color: #F5B942;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     p{
         color: #D8C4F8;
-        line-height: 1.6;
+        line-height: 1;
     }
 }
 
@@ -162,12 +175,12 @@ body{
 .footer {
     background-color: #16002B;
     color: #F8F5FF;
-    padding: 50px 60px 20px;
+    padding: 10px 60px 5px;
 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
 }
 
 .footer-brand {
@@ -208,8 +221,8 @@ body{
     width: 100%;
     text-align: center;
     border-top: 1px solid #3D1766;
-    padding-top: 20px;
-    margin-top: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .footer-bottom p {
@@ -220,7 +233,7 @@ body{
 .social-media {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .social-media a {

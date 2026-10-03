@@ -22,7 +22,8 @@ body{
     }
 
     ul {
-        margin-left: 70%;
+        margin-left: 75%;
+        font-size: large;
     }
 
     a {
@@ -36,25 +37,37 @@ body{
     }
 
     .dropdown {
-        display: inline-block;
-
+        position: relative;
+        
     }
-
     .dropdown-list {
         display: none;
         position: absolute;
-        background-color: white;
-        padding: 10px;
-        a{
-            text-decoration: none;
-            color: #16002B;
-        }
+        top: 120%;
+        left: 0;
+        background-color: #3D1766 ;
+        min-width: 170px;
+        transform: translateX(-50px);
+    }
+
+    .dropdown-list a {
+        color: #D8C4F8;
+        padding: 10px 10px;
+        display: block;
+        text-decoration: none;
+        white-space: nowrap;
+        
+    }
+
+    .dropdown-list a:hover {
+        background-color: #9e80be;
     }
 
     .dropdown:hover .dropdown-list {
         display: block;
-        color: #C4B5FD;
+        transition: 1s;
     }
+    
 }
 
 .box{
@@ -95,12 +108,12 @@ ol{li, h2{
 .footer {
     background-color: #16002B;
     color: #F8F5FF;
-    padding: 50px 60px 20px;
+    padding: 10px 60px 5px;
 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
 }
 
 .footer-brand {
@@ -141,8 +154,8 @@ ol{li, h2{
     width: 100%;
     text-align: center;
     border-top: 1px solid #3D1766;
-    padding-top: 20px;
-    margin-top: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .footer-bottom p {
@@ -153,7 +166,7 @@ ol{li, h2{
 .social-media {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .social-media a {
