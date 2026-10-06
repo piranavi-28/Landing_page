@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(240, 245, 245);
+}
+nav{
+    h1{
+        display: block;
+        background-color: rgb(54, 144, 105);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.tag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1000%;
+
+    span{
+        font-size: 50px;
+    }
+
+    h2{
+        line-height: 50px;
+    }
+    
+    .card{
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+        width: 200px;
+        min-width: 100px;
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5em;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeInUp 0.8s ease-out;
+    }
+
+    .card:hover{
+        transform: translateY(-10px);
+        transition: 0.3s;
+    }
+
+    .card1{
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+        width: 200px;
+        min-width: 100px;
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5em;
+        position: relative;
+        outline: 2px solid rgb(54, 144, 105);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeInUp 0.8s ease-out;
+    }
+
+    .card1::before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        border: 2px solid rgb(54, 144, 105);
+        border-radius: 10px;
+        opacity: 0;
+        animation: borderPulse 2s  infinite ease-out;
+        pointer-events: none;
+    }
+
+    #badge{
+        position: absolute;
+        top: -10px;
+        right: -2px;
+        background-color: rgb(54, 144, 105);
+        border-radius: 100cm;
+        padding: 0px 5px;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        color: white;
+    }
+    
+
+    .Button{
+        button{
+            background-color: rgb(54, 144, 105);
+            border: none;
+            padding: 5px 40px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(37, 100, 73);
+        }
+    }
+}
+
+footer{
+    color: rgba(160, 158, 158, 0.781);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes borderPulse {
+    0% {
+        transform: scale(1.03);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.12);
+        opacity: 0;
+    }
+}   
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+}
